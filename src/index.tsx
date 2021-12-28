@@ -8,17 +8,17 @@ import Search from "./components/ts/Search";
 import Settings from "./components/ts/Settings";
 
 if (!localStorage.getItem("search-url"))
-    localStorage.setItem("search-url", "https://google.com/search?q={query}");
+    localStorage.setItem("search-url", "https://duckduckgo.com/?q={query}");
 if (!localStorage.getItem("bookmarks"))
     localStorage.setItem(
         "bookmarks",
         JSON.stringify([
             [
-                "Category 1",
+                "Example",
                 [
-                    { name: "Bookmark 1", link: "//example.com" },
+                    { name: "Bookmark 1", link: "//google.com" },
                     { name: "Bookmark 2", link: "//example.com" },
-                    { name: "Bookmark 3", link: "//example.com" },
+                    { name: "Bookmark 3", link: "//0x0.st" },
                 ],
             ],
             [
