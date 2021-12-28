@@ -39,6 +39,7 @@ const Header = () => {
         <div className={styles.header}>
             <Helmet>
                 <link rel="shortcut icon" href={browserIcon} type="image/x-icon" />
+                <title>startpage</title>
             </Helmet>
             <img src={browserIcon} alt="Browser Logo" onClick={logoAnimation} />
             <h1>{browserName}</h1>
