@@ -18,7 +18,7 @@ const Clock = () => {
 
     return (
         <h5>
-          Good {time === "AM" ? "morning" : (Number(hours) < 7 ? "afternoon" : "evening")}. • {hours}:{minutes}:
+          {time === "AM" ? (Number(hours) < 6 ? "Can't sleep?" : "Good morning") : (Number(hours) < 7 ? "Good afternoon" : "Good evening")} • {hours}:{minutes}:
             {seconds} {time}
         </h5>
     );
